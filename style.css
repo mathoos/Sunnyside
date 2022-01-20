@@ -1,0 +1,284 @@
+body{   
+    margin: 0;
+    font-size: 18px;
+    font-family: "Barlow";
+    font-weight: 600;
+    background-color: hsl(0, 0%, 100%)
+}
+#accueil{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: contain;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    margin-bottom: 5em;
+}
+#liens{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-right: 3em;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 3%;
+    transition: transform .5s;
+    
+}
+nav a:hover{
+    background-color: hsl(206, 68%, 77%);
+    border-radius: 50px 50px 50px 50px;
+    transform: scale(1.2);
+    
+    
+}
+#titre{
+    text-align: center;
+}
+h1{
+    font-size: 70px;
+    color: white;
+    font-family: "Fraunces";
+    letter-spacing: 2px;
+}
+#arrow{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+}
+
+h2{
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0;
+    color: hsl(212, 27%, 19%)
+}
+button{
+    all: unset;
+    font-family: "Fraunces";
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(212, 27%, 19%);
+    cursor: pointer;   
+}
+#souligne-jaune{
+    padding: 1.5%;
+    background-image: linear-gradient(to top, yellow 40%, transparent 40.1%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s
+    
+}
+#souligne-jaune:hover{
+    background-size: 100% 100%;   
+}
+#souligne-orange{
+    padding: 1.5%;
+    background-image: linear-gradient(to top, orange 40%, transparent 40.1%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s
+    
+}
+#souligne-orange:hover{
+    background-size: 100% 100%;   
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card p{
+    line-height: 1.7em;
+    color: hsl(210, 4%, 67%);
+
+}
+.explain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 50%;
+}
+.explain2{
+    width: 50%;
+    margin-top: 20em; 
+    text-align: center;   
+}
+.explain2 h2{
+    font-size: 30px;
+}
+.explain2 p{
+    font-size: 17px;
+}
+#cerise{
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+#cerise h2{
+    color: hsl(167, 40%, 24%);
+}
+#cerise p{
+    color: hsl(167, 40%, 24%)
+}
+
+
+#orange{
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#orange h2{
+    color: hsl(198, 62%, 26%)
+}
+#orange p{
+    color: hsl(198, 62%, 26%)
+
+}
+#avis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 5em;
+}
+#testimonials{
+    width: 100%;
+    margin-bottom: 5em;
+}
+h3{
+    color:hsl(210, 4%, 67%);
+    font-family: "Fraunces";
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+#clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.box-client{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+
+    width: 30%;
+}
+.photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+}
+.photo img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 100%;
+}
+.description{
+    width: 80%;
+    text-align: center;
+    line-height: 1.7em;
+    color: hsl(213, 9%, 39%)
+}
+.prenom{
+    font-family: "Fraunces";
+    text-align: center;
+    font-weight: bolder;
+    color: hsl(212, 27%, 19%);
+}
+.prenom span{
+    color: hsl(210, 4%, 67%);
+    font-family: "Barlow";
+    font-size: 15px;
+    font-weight: lighter;
+}
+footer{
+    
+    width: 100%;
+    height: 100vh;
+}
+#photo-footer{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 60%;
+
+}
+#photo-footer img{
+    width: 25%;
+    height: 100%;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: hsl(168, 34%, 41%);
+    color: hsl(167, 40%, 24%);
+}
+#info-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+#sunnyside{
+    font-weight: bold;
+    font-size: 30px;  
+}
+#blabla{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-bottom: 3em;
+    
+}
+#blabla p{
+    font-weight: lighter;
+    transition: color .5s;
+    cursor: pointer;
+}
+#blabla p:hover{
+    color: white;
+}
+#picto{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+#picto img{
+    cursor: pointer;
+}
